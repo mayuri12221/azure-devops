@@ -1,5 +1,5 @@
+numpy==1.19.3
 pandas
-numpy
 scikit-learn
 Flask
 pylint
