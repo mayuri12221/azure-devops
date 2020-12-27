@@ -3,8 +3,8 @@ from flask.logging import create_logger
 import logging
 
 #import pandas as pd
-from sklearn.externals import joblib
-from sklearn.preprocessing import StandardScaler
+#from sklearn.externals import joblib
+#from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
 LOG = create_logger(app)
@@ -14,9 +14,9 @@ def scale(payload):
     """Scales Payload"""
 
     LOG.info("Scaling Payload: %s payload")
-    scaler = StandardScaler().fit(payload)
-    scaled_adhoc_predict = scaler.transform(payload)
-    return scaled_adhoc_predict
+    #scaler = StandardScaler().fit(payload)
+    #scaled_adhoc_predict = scaler.transform(payload)
+    #return scaled_adhoc_predict
 
 @app.route("/")
 def home():
@@ -55,7 +55,8 @@ def predict():
     """
 
     try:
-        clf = joblib.load("boston_housing_prediction.joblib")
+        #clf = joblib.load("boston_housing_prediction.joblib")
+         LOG.info("JSON payload: TRY json_payload")
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
