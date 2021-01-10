@@ -1,10 +1,14 @@
+#from _typeshed import OpenBinaryModeUpdating
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
+from numpy.core.fromnumeric import var
 
 import pandas as pd
-import joblib
+#import joblib
+from sklearn.externals import joblib 
 from sklearn.preprocessing import StandardScaler
+import sys
 
 app = Flask(__name__)
 LOG = create_logger(app)
@@ -56,8 +60,8 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-    except:
-        LOG.info("JSON payload: %s json_payload")
+    except Exception as e :
+        LOG.info("JSON payload: %s json_payload" +  sys.exc_info()[0])
         return "Model not loaded"
 
     json_payload = request.json
@@ -69,4 +73,4 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(debug=True)
