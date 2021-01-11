@@ -41,7 +41,7 @@ To run this project follow these steps -
 
 Demo
 
-•	Can find demo inside video folder. 
+•	Can find demo inside video folder and at: https://www.youtube.com/watch?v=OBguAnU9SHM
 •	All screenshots can be checked in the screenshot folder.
 •	The Status badge for Github Actions workflow as below
 
