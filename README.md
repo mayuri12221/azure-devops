@@ -45,7 +45,7 @@ To run this project follow these steps -
 
 •	When the app is successfully deployed then update the app service endpoint in the code and then run script ./make_predict_azure_app file to make a prediction.
 
-
+![](Screenshots/Make-Prediction.PNG)
 
 •	Run locust command in your project to perform a load test on the API. You can see an output like this.
 
