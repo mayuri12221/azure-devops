@@ -54,7 +54,7 @@ To run this project follow these steps -
 ![](Screenshots/Locust_Graphs.PNG)
 
 Enhancements
-------------
+--------------
  
 • Run the app on Kubernetes cluster
 •	Can add more test scenarios.
