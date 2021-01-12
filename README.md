@@ -1,14 +1,18 @@
 Overview
+--------
+
 
 CI/CD Pipeline with Azure : This project is about learning about the Dev-ops practice being used in the industry. It makes us understand the concept and workflow about Continuous Integration and Continuous Delivery in Azure. First, we need to set CI followed by CD in Azure. So, let’s begin the journey.
 
 Project Plan
+------------
 
 •	Board Link: https://dev.azure.com/himanshu122210705/Azure%20CI-CD%20Project/_boards/board/t/himanshu12221%20Team/Issues
 
 •	Spreadsheet with the project plan: https://docs.google.com/spreadsheets/d/1Z-m9gK7yVX3dMyPw46AwTEGrcuvliCdNAfGLhDcsyS0/edit?usp=sharing
 
 Instructions
+-----------
 
   •	Architectural Diagram -
 
@@ -40,6 +44,9 @@ To run this project follow these steps -
 ![](Screenshots/App%20Deployed.PNG)
 
 •	When the app is successfully deployed then update the app service endpoint in the code and then run script ./make_predict_azure_app file to make a prediction.
+
+![](Screenshots/Prediction.PNG)
+
 •	Run locust command in your project to perform a load test on the API. You can see an output like this.
 
 ![](Screenshots/Locust_Stats.PNG)
@@ -47,11 +54,13 @@ To run this project follow these steps -
 ![](Screenshots/Locust_Graphs.PNG)
 
 Enhancements
+------------
  
 • Run the app on Kubernetes cluster
 •	Can add more test scenarios.
 
 Demo
+----
 
 •	Can find demo inside video folder and at: https://www.youtube.com/watch?v=OBguAnU9SHM
 
