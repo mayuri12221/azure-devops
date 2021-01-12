@@ -1,10 +1,16 @@
-  
-ssh-keygen
-git clone https://github.com/mayuri12221/azure-devops/.git
+ 
+# Create and import virtual env
 python3 -m venv ~/.azure-devops
 source ~/.azure-devops/bin/activate
-cd azure-devops
+
+# Install, lint and test
 make all
-az login
-az webapp up -n pythonapp2
+
+# Deploy using Azure Upservice
+az webapp up -n azure-devops --sku F1
+
+# Make prediction
 ./make_predict_azure_app.sh
+
+# Check logs
+az webapp log tail
