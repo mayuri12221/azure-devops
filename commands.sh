@@ -1,9 +1,9 @@
   
 ssh-keygen
 git clone https://github.com/mayuri12221/azure-devops/.git
-python3 -m venv ~/.udacity-azuredeveops
-source ~/.udacity-azuredevops/bin/activate
-cd udacity-azuredeveops
+python3 -m venv ~/.azure-devops
+source ~/.azure-devops/bin/activate
+cd azure-devops
 make all
 az login
 az webapp up -n pythonapp2
