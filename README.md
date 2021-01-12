@@ -2,7 +2,9 @@ CI/CD Pipeline with Azure
 This project is about learning about the Dev-ops practice being used in the industry. It makes us understand the concept and workflow about Continuous Integration and Continuous Delivery in Azure. First, we need to set CI followed by CD in Azure. So, let’s begin the journey.
 
 Project Plan
+
 •	Board Link: https://dev.azure.com/himanshu122210705/Azure%20CI-CD%20Project/_boards/board/t/himanshu12221%20Team/Issues
+
 •	Spreadsheet with the project plan: https://docs.google.com/spreadsheets/d/1Z-m9gK7yVX3dMyPw46AwTEGrcuvliCdNAfGLhDcsyS0/edit?usp=sharing
 
 Instructions
